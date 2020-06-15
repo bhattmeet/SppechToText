@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtReady"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Once Ready, Speak your 6 Digit \nEmployee ID"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/txtTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:layout_below="@id/txtReady"
+        android:textColor="#FF0000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:textSize="18sp"
+        android:layout_below="@id/txtTimer"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/routeEmpID"
+        android:layout_below="@id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingStart="50dp">
+    <TextView
+        android:id="@+id/txtID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Employee ID: "
+        android:textSize="16sp"
+        android:textStyle="normal"/>
+    <TextView
+        android:id="@+id/txtEmpID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="normal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/routeEmpName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/routeEmpID"
+        android:gravity="start"
+        android:paddingStart="50dp">
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Employee Name: "
+            android:textSize="16sp"
+            android:textStyle="normal"/>
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="normal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/routeEmpLName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingStart="50dp"
+        android:layout_below="@id/routeEmpName">
+        <TextView
+            android:id="@+id/txtLname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Employee LastName: "
+            android:textSize="16sp"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/txtlname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="normal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/routeEmpDOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingStart="50dp"
+        android:layout_below="@id/routeEmpLName">
+        <TextView
+            android:id="@+id/txtdob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Employee DOB: "
+            android:textSize="16sp"
+            android:textStyle="normal"/>
+        <TextView
+            android:id="@+id/txtDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="normal"/>
+    </LinearLayout>
+</RelativeLayout>
